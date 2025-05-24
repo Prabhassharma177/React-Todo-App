@@ -1,0 +1,117 @@
+.todo-wrapper {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 25px 20px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6; /* soft blue */
+  background-color: #ffffff;
+}
+
+.input-group button {
+  background-color: #3b82f6; /* soft blue */
+  border: none;
+  padding: 8px 14px; /* smaller button */
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 8px rgba(59, 130, 246, 0.5);
+}
+
+.input-group button:hover {
+  background-color: #2563eb; /* darker blue */
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.6);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #2d3748;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.todo-list li.done span {
+  text-decoration: line-through;
+  color: #94a3b8; /* muted gray-blue */
+  font-style: italic;
+}
+
+.buttons button {
+  background: transparent;
+  border: 1.5px solid #60a5fa; /* lighter blue */
+  color: #3b82f6;
+  font-weight: 600;
+  padding: 6px 12px; /* smaller */
+  border-radius: 6px;
+  margin-left: 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.mark-all-btn {
+  margin-top: 28px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #2563eb; /* darker blue */
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.mark-all-btn:hover {
+  background-color: #1e40af; /* navy blue */
+  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.8);
+}
+
